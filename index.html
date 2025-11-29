@@ -1,210 +1,325 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="合同会社CROSS AIは、最先端のAI技術を活用したソリューション開発とコンサルティングを提供します。企業のDX推進を強力にサポートします。">
-    <meta name="keywords" content="AI開発,人工知能,機械学習,AIコンサルティング,DX,CROSS AI">
-    <title>合同会社CROSS AI - AI開発・コンサルティング | 最先端AI技術でビジネスを変革</title>
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="合同会社CROSS AI - AI開発・コンサルティング">
-    <meta property="og:description" content="最先端のAI技術を活用したソリューション開発とコンサルティングを提供">
-    <meta property="og:type" content="website">
-
-    <!-- 構造化データ (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "合同会社CROSS AI",
-      "description": "AI開発・コンサルティング",
-      "url": "https://cross-ai.jp",
-      "foundingDate": "2024",
-      "serviceType": ["AI開発", "機械学習", "データ分析", "AIコンサルティング"]
-    }
-    </script>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LIN_lifelogはLimitlessで24時間の会話を録音し、Geminiで出来事・学び・ToDoを抽出するライフログサービスです。" />
+  <meta name="keywords" content="LIN_lifelog, Limitless, Gemini, ライフログ, 会話録音, 学び抽出" />
+  <title>LIN_lifelog | Limitless録音×Gemini要約で1日の出来事を自動整理</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">CROSS AI</h1>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#services">サービス</a></li>
-                        <li><a href="#strengths">強み</a></li>
-                        <li><a href="#about">会社概要</a></li>
-                        <li><a href="#contact" class="cta-button">お問い合わせ</a></li>
-                    </ul>
-                </nav>
-            </div>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <div class="brand__icon">🔴</div>
+        <div>
+          <p class="brand__eyebrow">24h Conversation Capture</p>
+          <h1 class="brand__name">LIN_lifelog</h1>
         </div>
-    </header>
+      </div>
+      <nav class="nav">
+        <a href="#about">概要</a>
+        <a href="#getting-started">使い方</a>
+        <a href="#flow">仕組み</a>
+        <a href="#dashboard">ダッシュボード</a>
+        <a href="#download" class="nav__cta">テキストDL</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- ヒーローセクション -->
+  <main>
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">AIで未来を創造する</h2>
-                <p class="hero-subtitle">最先端のAI技術で、あなたのビジネスを次のステージへ</p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn btn-primary">サービスを見る</a>
-                    <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
-                </div>
+      <div class="container hero__grid">
+        <div>
+          <p class="pill">Limitless × Gemini のライフログ</p>
+          <h2>会話を24時間録音し、1日の出来事と学びを自動で残す。</h2>
+          <p class="lead">Limitlessの常時録音APIで全会話を捕捉し、Geminiが内容を要約。出来事・学び・ToDoを毎日整理し、フルテキストもダウンロードできます。</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#dashboard">録音と抽出を確認</a>
+            <a class="btn btn--ghost" href="#getting-started">どこから使う？</a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <p class="stat__label">録音時間</p>
+              <p class="stat__value">24h/日</p>
             </div>
+            <div>
+              <p class="stat__label">抽出項目</p>
+              <p class="stat__value">出来事・学び・ToDo</p>
+            </div>
+            <div>
+              <p class="stat__label">エクスポート</p>
+              <p class="stat__value">テキストDL</p>
+            </div>
+          </div>
         </div>
+        <div class="hero__card">
+          <p class="card__eyebrow">サマリーのサンプル</p>
+          <h3>今日のハイライト</h3>
+          <ul class="summary__list">
+            <li><span>出来事</span>顧客との製品デモで新しい要望を整理。</li>
+            <li><span>学び</span>録音精度は静かな環境で10%向上。</li>
+            <li><span>ToDo</span>Geminiプロンプトを改善し、夕方に再度テスト。</li>
+          </ul>
+          <div class="badge badge--success">Gemini処理済み</div>
+        </div>
+      </div>
     </section>
 
-    <!-- サービス紹介 -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">サービス</h2>
-            <p class="section-subtitle">CROSS AIが提供する各種AIソリューション</p>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🤖</div>
-                    <h3>AI開発</h3>
-                    <p>機械学習モデルの設計・開発から実装まで、お客様のニーズに合わせたカスタムAIソリューションを提供します。</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>AIコンサルティング</h3>
-                    <p>AI導入の戦略策定から運用まで、専門家がトータルサポート。最適なAI活用方法をご提案します。</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>データ分析</h3>
-                    <p>ビッグデータの解析により、ビジネスインサイトを抽出。データドリブンな意思決定をサポートします。</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h3>システム開発</h3>
-                    <p>AIを組み込んだWebアプリケーション、業務システムの設計・開発を行います。</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🎓</div>
-                    <h3>AI研修・教育</h3>
-                    <p>社内のAI人材育成をサポート。基礎から実践まで、幅広い研修プログラムをご用意しています。</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">⚙️</div>
-                    <h3>DX推進支援</h3>
-                    <p>デジタルトランスフォーメーションの実現に向けて、AI技術を活用した業務改革を支援します。</p>
-                </div>
-            </div>
+    <section id="about" class="section">
+      <div class="container section__header">
+        <div>
+          <p class="pill">What is LIN_lifelog</p>
+          <h3>すべての会話を1日のストーリーに変換。</h3>
+          <p class="muted">Limitlessの録音APIで24時間分の会話を取りこぼしなく記録し、API経由でテキスト化。Geminiが内容を理解して出来事・学び・ToDoを推測し、翌朝には1日のサマリーが完成します。</p>
         </div>
+        <div class="feature__grid">
+          <div class="feature">
+            <div class="icon">🎙️</div>
+            <h4>常時録音 & 抽出</h4>
+            <p>Limitlessで全会話を録音し、APIで自動取得。タグや日付で整理して保存。</p>
+          </div>
+          <div class="feature">
+            <div class="icon">🔎</div>
+            <h4>Geminiで理解</h4>
+            <p>会話の文脈を踏まえて出来事を推測し、学びと次のアクションを抽出。</p>
+          </div>
+          <div class="feature">
+            <div class="icon">📄</div>
+            <h4>テキストDL</h4>
+            <p>1日分の全文テキストをワンクリックでダウンロード。バックアップや共有に便利。</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- 強み -->
-    <section id="strengths" class="strengths">
-        <div class="container">
-            <h2 class="section-title">CROSS AIの強み</h2>
-
-            <div class="strengths-grid">
-                <div class="strength-card">
-                    <h3>⚡ 最先端技術</h3>
-                    <p>常に最新のAI技術をキャッチアップし、実践的なソリューションに落とし込みます。GPT、LLM、機械学習など幅広い技術スタックに対応。</p>
-                </div>
-
-                <div class="strength-card">
-                    <h3>🎯 ビジネス理解</h3>
-                    <p>技術だけでなく、お客様のビジネスを深く理解。ROIを重視した実用的なAIソリューションをご提案します。</p>
-                </div>
-
-                <div class="strength-card">
-                    <h3>👥 経験豊富なチーム</h3>
-                    <p>AI・機械学習の専門家がチーム一丸となってプロジェクトをサポート。豊富な開発実績と知見を活かします。</p>
-                </div>
-
-                <div class="strength-card">
-                    <h3>🚀 迅速な対応</h3>
-                    <p>アジャイル開発手法により、スピーディーな開発・改善サイクルを実現。市場の変化に柔軟に対応します。</p>
-                </div>
-            </div>
+    <section id="getting-started" class="section section--alt">
+      <div class="container section__header">
+        <div>
+          <p class="pill">Start Here</p>
+          <h3>「どこから使えばいいの？」への答え</h3>
+          <p class="muted">LIN_lifelogはLimitlessとGeminiをつないで動くサービスです。以下の手順に沿えば、録音の開始から1日のサマリー取得、テキストのダウンロードまで迷わず進めます。</p>
         </div>
+        <div class="guide__grid">
+          <div class="guide">
+            <div class="guide__head">
+              <span class="badge">Step 1</span>
+              <h4>Limitlessで録音を開始</h4>
+            </div>
+            <p class="muted">Limitlessアカウントを作成し、デバイスに常駐する録音を有効化。APIキーを取得してLIN_lifelogに登録すると、24時間録音が自動で回ります。</p>
+            <ul class="guide__list">
+              <li>デバイス登録 & 常時録音ON</li>
+              <li>APIキーをコピーして設定画面に貼り付け</li>
+            </ul>
+          </div>
+          <div class="guide">
+            <div class="guide__head">
+              <span class="badge">Step 2</span>
+              <h4>会話テキストを取得</h4>
+            </div>
+            <p class="muted">LIN_lifelogがLimitless APIを定期ポーリングし、録音チャンクを収集。時刻と話者タグ付きでダッシュボードに反映されます。</p>
+            <ul class="guide__list">
+              <li>録音ステータスをダッシュボードで確認</li>
+              <li>最新チャンクの取得タイムスタンプを追跡</li>
+            </ul>
+          </div>
+          <div class="guide">
+            <div class="guide__head">
+              <span class="badge">Step 3</span>
+              <h4>Geminiで要約 & DL</h4>
+            </div>
+            <p class="muted">集まったテキストをGeminiに送り、出来事・学び・ToDoを生成。完成したサマリーと全文ログはボタン1つで.txtとしてダウンロードできます。</p>
+            <ul class="guide__list">
+              <li>「Geminiに送信」で処理を実行</li>
+              <li>サマリー確認後「テキストをダウンロード」</li>
+            </ul>
+          </div>
+        </div>
+        <div class="guide__cta">
+          <a class="btn btn--primary" href="#dashboard">今すぐダッシュボードを見る</a>
+          <a class="btn btn--ghost" href="mailto:hello@lin-lifelog.app">導入サポートを依頼</a>
+        </div>
+      </div>
     </section>
 
-    <!-- 会社概要 -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">会社概要</h2>
-
-            <div class="about-content">
-                <table class="about-table">
-                    <tr>
-                        <th>会社名</th>
-                        <td>合同会社CROSS AI（クロスエーアイ）</td>
-                    </tr>
-                    <tr>
-                        <th>事業内容</th>
-                        <td>
-                            ・AI（人工知能）を活用したシステム開発<br>
-                            ・機械学習・深層学習モデルの開発<br>
-                            ・AIコンサルティング<br>
-                            ・データ分析・データサイエンス<br>
-                            ・DX推進支援<br>
-                            ・AI研修・教育事業
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>設立</th>
-                        <td>2024年</td>
-                    </tr>
-                    <tr>
-                        <th>所在地</th>
-                        <td>東京都</td>
-                    </tr>
-                </table>
+    <section id="flow" class="section section--alt">
+      <div class="container">
+        <p class="pill">Workflow</p>
+        <h3>録音から学び抽出までのフロー</h3>
+        <div class="timeline">
+          <div class="step">
+            <div class="step__number">1</div>
+            <div>
+              <h4>Limitlessで24時間録音</h4>
+              <p>デバイス常駐の録音をAPIで制御。開始・停止・ステータス確認を自動化します。</p>
             </div>
+          </div>
+          <div class="step">
+            <div class="step__number">2</div>
+            <div>
+              <h4>APIでテキスト抽出</h4>
+              <p>録音チャンクを順次取得し、時系列に整理。ノイズ除去や話者メモも付与可能。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">3</div>
+            <div>
+              <h4>Geminiで要約 & 推測</h4>
+              <p>出来事の抽出、学び、ToDo生成をLLMで実行。重要度や感情トーンも付帯情報として保存。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__number">4</div>
+            <div>
+              <h4>ダッシュボードで確認 & DL</h4>
+              <p>日別サマリーと全文ログを可視化。最新のテキストを.txt形式でダウンロードできます。</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- お問い合わせ -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">お問い合わせ</h2>
-            <p class="contact-text">
-                AIの導入や活用についてのご相談は、お気軽にお問い合わせください。<br>
-                お客様のビジネス課題に最適なソリューションをご提案いたします。
-            </p>
-            <div class="contact-buttons">
-                <a href="mailto:info@cross-ai.jp" class="btn btn-primary">メールでお問い合わせ</a>
-            </div>
+    <section id="dashboard" class="section">
+      <div class="container dashboard">
+        <div class="section__header">
+          <div>
+            <p class="pill">Live Dashboard</p>
+            <h3>録音ステータスとGemini処理の見える化</h3>
+            <p class="muted">以下のUIはLIN_lifelogが提供する操作イメージです。Limitless APIで録音を管理し、取得したテキストをGeminiに渡して進行状況を追跡します。</p>
+          </div>
+          <div class="controls">
+            <button class="btn btn--primary">録音開始</button>
+            <button class="btn btn--ghost">録音停止</button>
+            <button class="btn btn--secondary">Geminiに送信</button>
+          </div>
         </div>
+        <div class="dashboard__grid">
+          <div class="panel">
+            <div class="panel__header">
+              <div>
+                <p class="panel__eyebrow">Limitless</p>
+                <h4>録音状況</h4>
+              </div>
+              <span class="badge badge--success">稼働中</span>
+            </div>
+            <ul class="status__list">
+              <li><span>デバイス</span><strong>LIN-REC-01</strong></li>
+              <li><span>稼働時間</span><strong>14時間 22分</strong></li>
+              <li><span>最新チャンク</span><strong>10分前に取得</strong></li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="panel__header">
+              <div>
+                <p class="panel__eyebrow">Processing</p>
+                <h4>Gemini処理キュー</h4>
+              </div>
+              <span class="badge badge--info">進行中</span>
+            </div>
+            <div class="progress">
+              <div class="progress__bar" style="width: 68%"></div>
+            </div>
+            <ul class="queue">
+              <li><span>09:00-12:00</span>学び抽出中</li>
+              <li><span>12:00-15:00</span>完了</li>
+              <li><span>15:00-18:00</span>待機</li>
+            </ul>
+          </div>
+          <div class="panel panel--wide">
+            <div class="panel__header">
+              <div>
+                <p class="panel__eyebrow">Daily Summary</p>
+                <h4>出来事・学び・ToDo</h4>
+              </div>
+              <span class="badge">自動更新</span>
+            </div>
+            <div class="summary__columns">
+              <div>
+                <h5>出来事</h5>
+                <ul>
+                  <li>開発MTGでモバイル版UIの方向性を決定。</li>
+                  <li>サポートへの問い合わせで録音停止条件を確認。</li>
+                </ul>
+              </div>
+              <div>
+                <h5>学び</h5>
+                <ul>
+                  <li>ノイズキャンセル後にGeminiの要約精度が安定。</li>
+                  <li>APIのチャンクサイズは30分以内が扱いやすい。</li>
+                </ul>
+              </div>
+              <div>
+                <h5>ToDo</h5>
+                <ul>
+                  <li>夜間の録音開始を自動スケジュール化。</li>
+                  <li>Geminiプロンプトに「発話者」を明示する項目を追加。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- フッター -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>CROSS AI</h3>
-                    <p>AI技術でビジネスの未来を創造</p>
-                </div>
-                <div class="footer-links">
-                    <h4>リンク</h4>
-                    <ul>
-                        <li><a href="#services">サービス</a></li>
-                        <li><a href="#strengths">強み</a></li>
-                        <li><a href="#about">会社概要</a></li>
-                        <li><a href="#contact">お問い合わせ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 合同会社CROSS AI. All rights reserved.</p>
-            </div>
+    <section id="download" class="section section--alt">
+      <div class="container download">
+        <div>
+          <p class="pill">Export</p>
+          <h3>フルテキストをいつでもDL</h3>
+          <p class="muted">最新の取得データを.txtファイルとしてまとめ、ワンクリックでダウンロード。バックアップ、共有、二次分析に活用できます。</p>
+          <div class="download__cta">
+            <button class="btn btn--primary">テキストをダウンロード</button>
+            <p class="caption">最終更新: 今日 06:00 / サイズ: 2.3MB</p>
+          </div>
         </div>
-    </footer>
+        <div class="download__card">
+          <p class="card__eyebrow">形式</p>
+          <h4>日別TXT + メタデータ</h4>
+          <ul>
+            <li>時刻・話者タグ付き</li>
+            <li>Gemini生成の出来事・学び・ToDoを併録</li>
+            <li>UTF-8テキストでそのまま解析可能</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="container">
+        <p class="pill">FAQ</p>
+        <h3>よくある質問</h3>
+        <div class="faq__grid">
+          <div>
+            <h4>録音データはどこに保存されますか？</h4>
+            <p class="muted">Limitlessのストレージに安全に保存し、API経由でLIN_lifelogが取得。Gemini処理後のテキストは暗号化して保持します。</p>
+          </div>
+          <div>
+            <h4>Geminiのプロンプトは編集できますか？</h4>
+            <p class="muted">はい。出来事の粒度やToDoの具体度など、抽出ポリシーを管理画面から調整できます。</p>
+          </div>
+          <div>
+            <h4>ダウンロードは何形式ですか？</h4>
+            <p class="muted">日別の.txt形式を提供し、JSONやCSVへの拡張もロードマップに含まれています。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="brand__eyebrow">LIN_lifelog</p>
+        <p class="muted">Limitlessの録音とGeminiの理解で、あなたの1日を自動で記録し続けます。</p>
+      </div>
+      <div class="footer__links">
+        <a href="#about">概要</a>
+        <a href="#flow">仕組み</a>
+        <a href="#dashboard">ダッシュボード</a>
+        <a href="#download">テキストDL</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
